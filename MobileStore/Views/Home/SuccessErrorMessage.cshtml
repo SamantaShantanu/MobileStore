@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.Name == "Success")
+{
+    <div class="jumbotron">
+        <h1>Your Registration has been successful..</h1>
+
+    </div>
+}
+else if (ViewBag.Name == "NotSuccess")
+{
+    <div class="jumbotron">
+        <h1>Your Registration has not been yet..</h1>
+
+    </div>
+}
+else
+{
+    <div class="jumbotron">
+        <h1>Something went wrong.</h1>
+
+    </div>
+}
+
+
+
+
+
